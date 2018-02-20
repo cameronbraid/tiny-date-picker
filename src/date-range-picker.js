@@ -122,8 +122,7 @@ export function DateRangePicker(container) {
   });
 
   function dateClass(dt) {
-    const rangeClass = hoverDate &&
-                       state.start &&
+    const rangeClass = state.start &&
                        inRange(dt, state.end || hoverDate, state.start);
     const selectedClass = datesEq(dt, state.start) || datesEq(dt, state.end);
 
